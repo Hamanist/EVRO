@@ -1,16 +1,35 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import os
+from datetime import datetime
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def main():
+    while True:
+        currency = input('Введите название валюты (USD po EUR)\n-> ')
+        if currency not in ('USD', 'EUR'):
+            print('не корректный ввод')
+            continue
+
+        rate = get_currency_rate(currency)
+        timestamp = datetime.now()
+
+        print(f'Курс {currency} к рублю: {rate}')
+        data = {'currency': currency, 'rate': rate, 'timestamp': timestamp}
+        save_to_json(data)
+
+        choise = input('Выберите действия (1 - продолжить, 2 - выйти)\n->')
+        if choise == '1':
+            continue
+        elif choise == '2':
+            break
+        else:
+            print('Не корректный ввод')
 
 
-# Press the green button in the gutter to run the script.
+def get_currency_rate(base): ...
+
+
+def save_to_json(data): ...
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
