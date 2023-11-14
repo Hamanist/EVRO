@@ -1,0 +1,37 @@
+[
+  {
+    "currency": "USD",
+    "rate": 90.628034,
+    "timestamp": "2023-11-14 17:14:55"
+  },
+  {
+    "currency": "EUR",
+    "rate": 98.003855,
+    "timestamp": "2023-11-14 17:17:28"
+  },
+  {
+    "currency": "USD",
+    "rate": 90.630993,
+    "timestamp": "2023-11-14 17:18:02"
+  },
+  {
+    "currency": "USD",
+    "rate": 90.525008,
+    "timestamp": "2023-11-14 23:07:14"
+  },
+  {
+    "currency": "USD",
+    "rate": 90.525001,
+    "timestamp": "2023-11-14 23:17:38"
+  },
+  {
+    "currency": "USD",
+    "rate": 90.525001,
+    "timestamp": "2023-11-14 23:17:58"
+  },
+  {
+    "currency": "EUR",
+    "rate": 98.546136,
+    "timestamp": "2023-11-14 23:28:16"
+  }
+]
